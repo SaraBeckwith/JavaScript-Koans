@@ -5,7 +5,7 @@ test("if", function() {
 	if (2 > 0) {
 		isPositive = true;
 	}
-	equal(__, isPositive,  'what is the value of isPositive?');
+	equal(true, isPositive,  'what is the value of isPositive?');
 });
 
 test("for", function() {
@@ -13,7 +13,7 @@ test("for", function() {
 	for (var i = 1; i <= 3; i++) {
 		counter = counter + i;
 	}
-	equal(__, counter, 'what is the value of counter?');
+	equal(16, counter, 'what is the value of counter?');
 });
 
 test("for in", function() {
@@ -27,15 +27,15 @@ test("for in", function() {
 	for (var property_name in person) {
   		result = result + property_name;
 	};
-	equal(__, result, 'what is the value of result?');
+	equal("nameage", result, 'what is the value of result?');
 });
 
 test("ternary operator", function() {
 	var fruit = true ? "apple" : "orange";
-	equal(__, fruit, 'what is the value of fruit?');
+	equal("apple", fruit, 'what is the value of fruit?');
 
 	fruit = false ? "apple" : "orange";
-	equal(__, fruit, 'now what is the value of fruit?');
+	equal("orange", fruit, 'now what is the value of fruit?');
 });
 
 test("switch", function() {
